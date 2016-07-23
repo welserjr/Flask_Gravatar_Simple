@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <form action="" method="POST">
+        {{ form.hidden_tag() }}
+
+        {{ form.email.errors[0] }}
+        {{ form.email.label }}: {{ form.email }}<br>
+
+        <button type="submit">Guardar</button>
+    </form>
+
+    <img src="{{ data.img }}" alt="{{ data.username }}">
+    <h1>{{ data.name }}</h1>
+    <p>{{ data.full_name }}</p>
+    <p>{{ data.username }}</p>
+    <p>{{ data.city }}</p>
+</body>
+</html>
